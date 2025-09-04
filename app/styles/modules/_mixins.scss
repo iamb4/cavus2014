@@ -1,0 +1,32 @@
+@mixin fontsize($fs, $lh) {
+	font-size: $fs;
+	line-height: $lh;
+}
+
+@mixin spriteSetup($image, $width, $height, $spriteX, $spriteY) {
+	display: inline-block;
+	width: $width;
+	height: $height;
+	background: url("../images/general/" + $image) no-repeat;
+	background-position: $spriteX $spriteY;
+}
+
+@mixin marginTopBottom($top, $bottom) {
+	margin-top: $top;
+	margin-bottom: $bottom;
+}
+
+@mixin paddingTopBottom($top, $bottom) {
+	padding-top: $top;
+	padding-bottom: $bottom;
+}
+
+
+
+@mixin dotsHorizontal() {
+	background: transparent url("../images/dots-horizontal.png") repeat-x left top;
+}
+
+@mixin dotsVertical() {
+	background: transparent url("../images/dots-vertical.png") repeat-y left top;
+}

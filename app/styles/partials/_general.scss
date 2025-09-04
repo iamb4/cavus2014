@@ -1,0 +1,101 @@
+/*
+**
+** General styles that get used from the whole site.
+*/
+
+body {
+
+}
+
+p {
+
+}
+
+a,
+a .icon,
+a .icon:before,
+button  {
+	transition: $link-fade-time;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+img {
+	max-width: 100%;
+}
+
+.bld {
+	font-weight: 700;
+}
+
+.ital {
+	font-style: italic;
+}
+
+.dotted-line {
+	@include dotsHorizontal();
+	height:2px;
+	margin-top: 21px;
+	margin-bottom: 21px;
+}
+
+.red {
+	color: $burgundy;
+}
+
+
+/* ********** Content ********** */
+.content {
+	@include marginTopBottom(40px, 25px);
+
+	.bottle-shot {
+		// padding-top: 20px;
+		text-align: center;
+
+        .title {
+            text-align: center;
+            margin-top: 0;
+        }
+
+        p {
+            text-align: left;
+            font-size: $font-size-small;
+        }
+
+        .bottle-img {
+            margin-top: 20px;
+        }
+	}
+
+	.cave-img {
+		float: left;
+		margin-top: 5px;
+		margin-right: 15px;
+		margin-bottom: 10px;
+	}
+}
+
+
+
+/* ********** Footer ********** */
+.footer {
+	@include marginTopBottom(75px, 25px);
+	font-size: 12px;
+
+	.contact-email {
+
+		text-align: left;
+
+		@media (min-width: $screen-sm-min) {
+			text-align: right;
+		}
+
+		a {
+			text-decoration: underline;
+		}
+	}
+}
+
+

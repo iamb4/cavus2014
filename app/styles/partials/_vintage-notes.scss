@@ -1,0 +1,81 @@
+/* 
+** 
+** Vintage Notes
+*/
+
+.vintage-notes-year-selector {
+
+	p {
+		padding-right: 30px;
+	}
+
+	ul {
+		
+		font-weight: 700;
+
+		li {
+
+			a {
+
+				padding: 2px 0;
+					
+				&:hover,
+				&:focus {
+					background-color: transparent;
+				}
+			}
+
+			&.active {
+
+				a {
+					color: $burgundy;
+
+					&:hover,
+					&:focus {
+						
+					}
+				}
+			}
+		}
+	}
+
+	.review-hldr {
+		display: none;
+
+		@media (min-width: $screen-sm-min) {
+			display: block;
+		}
+
+		h6 {
+			margin-top: 45px;
+		}
+	}
+}
+
+.vintage-notes-by-year-hldr {
+
+	@include dotsVertical();
+	
+	.vintage-notes-by-year {
+		
+		.tab-pane {
+
+			h3 {
+				margin-top: 45px;
+
+				@media (min-width: $screen-sm-min) {
+					margin-top: 0;
+				}
+			}
+
+			ul {
+				padding-left: 10px;
+
+				li {
+					margin: 5px 0 5px 8px;
+					margin-left: 8px;
+				}
+			}
+		}
+	}
+}

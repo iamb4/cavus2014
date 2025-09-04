@@ -1,0 +1,49 @@
+/* 
+** 
+** Waiting List 
+*/
+
+.contact-form {
+
+	.submit-btn {
+		width: 50%;
+		font-size: 12px;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		background-color: $burgundy;
+		border-color: $burgundy;
+		color: $white;
+		// padding-right: 35px;
+		// padding-left: 35px;
+
+		&:hover {
+			background-color: darken($burgundy, 5%);
+			border-color: darken($burgundy, 5%);
+		}
+	}
+}
+
+.contact-info {
+
+	@media (max-width: $screen-xs-max) {
+		margin-top: 75px;
+	}
+
+	.purchase-wine-btn {
+		font-size: 12px;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		text-align: left;
+		background-color: $burgundy;
+		border-color: $burgundy;
+		border-radius: 4px;
+
+		&:hover {
+			background-color: darken($burgundy, 5%);
+			border-color: darken($burgundy, 5%);
+		}
+	}
+
+}
+
+	

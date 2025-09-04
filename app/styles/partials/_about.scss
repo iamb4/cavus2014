@@ -1,0 +1,53 @@
+/* 
+** 
+** About
+*/
+
+.winemakers {
+
+	h3 {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	.winemaker {
+		
+		font-family: ‘Open Sans’, sans-serif;
+		font-weight: 400;
+		margin-top: 35px;
+
+		span.title {
+			font-weight: 700;
+		}
+
+		&:first-of-type {
+			margin-top: 0;
+		}
+	}
+
+}
+
+.vineyards {
+
+	@include dotsVertical();
+
+	h3 {
+		margin-top: 45px;
+
+		@media (min-width: $screen-sm-min) {
+			margin-top: 0;
+		}
+	}
+
+	// padding-left: 25px;
+
+	ul {
+		padding-left: 10px;
+
+		li {
+			margin: 5px 0 5px 8px;
+			margin-left: 8px;
+		}
+	}
+
+}

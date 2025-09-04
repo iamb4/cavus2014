@@ -1,0 +1,161 @@
+// $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/" !default;
+
+
+//== Scaffolding
+//
+// ## Settings for some of the most global styles.
+
+//** Global text color on `<body>`.
+$text-color:            $dark-grey !default;
+
+//** Global textual link color.
+$link-color:            $dark-grey !default;
+//** Link hover color set via `darken()` function.
+$link-hover-color:      $burgundy !default;
+
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+
+$font-family-sans-serif:  "Open Sans", Helvetica, Arial, sans-serif !default;
+$font-family-serif:       "Crimson Text", "Times New Roman", Times, serif !default;
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+$font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
+$font-family-base:        $font-family-sans-serif !default;
+
+$font-size-base:          14px !default;
+$font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
+
+$font-size-h1:            floor(($font-size-base * 1.8)) !default; // ~25px
+$font-size-h2:            floor(($font-size-base * 1.4)) !default; // ~30px
+$font-size-h3:            ceil(($font-size-base * 1.3)) !default; // ~24px
+$font-size-h4:            ceil(($font-size-base * 1.2)) !default; // ~18px
+$font-size-h5:            $font-size-base !default;
+$font-size-h6:            ceil(($font-size-base * 1.1)) !default; // ~12px
+
+//** Unit-less `line-height` for use in components like buttons.
+$line-height-base:        1.571428571 !default; // 22/14
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+$line-height-computed:    floor(($font-size-base * $line-height-base)) !default; // ~20px
+
+//** By default, this inherits from the `<body>`.
+$headings-font-family:    $font-family-serif !default;
+$headings-font-weight:    700 !default;
+$headings-line-height:    1.3 !default;
+$headings-color:          $black !default;
+
+
+
+//== Grid system
+//
+//## Define your custom responsive grid.
+
+// //** Number of columns in the grid.
+// $grid-columns:              12 !default;
+// //** Padding between columns. Gets divided in half for the left and right.
+// $grid-gutter-width:         30px !default;
+// Navbar collapse
+//** Point at which the navbar becomes uncollapsed.
+$grid-float-breakpoint:     $navbar-collaps-width !default;
+// //** Point at which the navbar begins collapsing.
+// $grid-float-breakpoint-max: ($grid-float-breakpoint - 1) !default;
+
+
+//== Navbar
+//
+//##
+
+// Basics of a navbar
+$navbar-height:                    				75px !default;
+$navbar-margin-bottom:             				0 !default;
+$navbar-border-radius:             				0 !default;
+// $navbar-padding-horizontal:        			floor(($grid-gutter-width / 2)) !default;
+// $navbar-padding-vertical:          			(($navbar-height - $line-height-computed) / 2) !default;
+// $navbar-collapse-max-height:       			340px !default;
+
+$navbar-default-color:             				$white !default;
+$navbar-default-bg:                				$white !default;
+$navbar-default-border:            				$white !default;
+
+// // Navbar links
+$navbar-default-link-color:                		$black !default;
+$navbar-default-link-hover-color:          		$burgundy !default;
+// $navbar-default-link-hover-bg:             		$lt-grey !default;
+$navbar-default-link-active-color:         		$burgundy !default;
+$navbar-default-link-active-bg:            		$white !default;
+// $navbar-default-link-disabled-color:       	#ccc !default;
+// $navbar-default-link-disabled-bg:          	transparent !default;
+
+// // Navbar brand label
+// $navbar-default-brand-color:               	$navbar-default-link-color !default;
+// $navbar-default-brand-hover-color:         	darken($navbar-default-brand-color, 10%) !default;
+// $navbar-default-brand-hover-bg:            	transparent !default;
+
+// Navbar toggle
+$navbar-default-toggle-hover-bg:           		$off-white !default;
+// $navbar-default-toggle-icon-bar-bg:        	#888 !default;
+// $navbar-default-toggle-border-color:       	#ddd !default;
+
+
+// // Inverted navbar
+// // Reset inverted navbar basics
+// $navbar-inverse-color:                     	$gray-light !default;
+// $navbar-inverse-bg:                         	#222 !default;
+// $navbar-inverse-border:                     	darken($navbar-inverse-bg, 10%) !default;
+
+// // Inverted navbar links
+// $navbar-inverse-link-color:                 	$gray-light !default;
+// $navbar-inverse-link-hover-color:           	#fff !default;
+// $navbar-inverse-link-hover-bg:              	transparent !default;
+// $navbar-inverse-link-active-color:          	$navbar-inverse-link-hover-color !default;
+// $navbar-inverse-link-active-bg:             	darken($navbar-inverse-bg, 10%) !default;
+// $navbar-inverse-link-disabled-color:        	#444 !default;
+// $navbar-inverse-link-disabled-bg:           	transparent !default;
+
+// // Inverted navbar brand label
+// $navbar-inverse-brand-color:                	$navbar-inverse-link-color !default;
+// $navbar-inverse-brand-hover-color:          	#fff !default;
+// $navbar-inverse-brand-hover-bg:             	transparent !default;
+
+// // Inverted navbar toggle
+// $navbar-inverse-toggle-hover-bg:            	#333 !default;
+// $navbar-inverse-toggle-icon-bar-bg:         	#fff !default;
+// $navbar-inverse-toggle-border-color:        	#333 !default;
+
+
+
+//== Navs
+//
+//##
+
+//=== Shared nav styles
+// $nav-link-padding:                          	10px 15px !default;
+// $nav-link-hover-bg:                         	transparent !default;
+
+// $nav-disabled-link-color:                   $gray-light !default;
+// $nav-disabled-link-hover-color:             $gray-light !default;
+
+// $nav-open-link-hover-color:                 #fff !default;
+
+// //== Tabs
+// $nav-tabs-border-color:                     #ddd !default;
+
+// $nav-tabs-link-hover-border-color:          $gray-lighter !default;
+
+// $nav-tabs-active-link-hover-bg:             $body-bg !default;
+// $nav-tabs-active-link-hover-color:          $gray !default;
+// $nav-tabs-active-link-hover-border-color:   #ddd !default;
+
+// $nav-tabs-justified-link-border-color:            #ddd !default;
+// $nav-tabs-justified-active-link-border-color:     $body-bg !default;
+
+// //== Pills
+// $nav-pills-border-radius:                   $border-radius-base !default;
+// $nav-pills-active-link-hover-bg:            $component-active-bg !default;
+// $nav-pills-active-link-hover-color:         $component-active-color !default;
+
+
+
+

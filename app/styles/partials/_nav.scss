@@ -1,0 +1,41 @@
+/* 
+** 
+** Navigation
+*/
+
+.navbar-default {
+
+	.navbar-nav {
+
+		@include fontsize(13px, 15px);
+		font-weight: 700;
+
+			> li {
+				
+				> a {
+					padding-top: 45px;
+					padding-bottom: 0;
+					text-transform: uppercase;
+				}
+				
+				&:last-of-type a {
+					padding-right: 0;
+				}
+				
+			}
+		
+		@media (max-width: $navbar-collaps-width - 1 ) {
+			margin-bottom: 40px;
+			> li {
+				
+				> a {
+					padding-top: 15px;
+					padding-bottom: 15px;
+					border-top: 1px solid $gray-lighter;
+				}
+				
+			}
+		}
+
+	}	
+}
