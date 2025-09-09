@@ -45,13 +45,16 @@ img {
 	color: $burgundy;
 }
 
+.underline {
+  text-decoration: underline;
+}
+
 
 /* ********** Content ********** */
 .content {
 	@include marginTopBottom(40px, 25px);
 
 	.bottle-shot {
-		// padding-top: 20px;
 		text-align: center;
 
         .title {
@@ -65,7 +68,9 @@ img {
         }
 
         .bottle-img {
-            margin-top: 20px;
+          float: left;
+          margin: 10px 36px 10px 20px;
+            // margin-top: 20px;
         }
 	}
 
