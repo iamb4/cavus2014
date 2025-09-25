@@ -4,98 +4,110 @@
 */
 
 body {
-
 }
 
 p {
-
 }
 
 a,
 a .icon,
 a .icon:before,
-button  {
-	transition: $link-fade-time;
+button {
+    transition: $link-fade-time;
 
-	&:hover {
-		text-decoration: none;
-	}
+    &:hover {
+        text-decoration: none;
+    }
 }
 
 img {
-	max-width: 100%;
+    max-width: 100%;
 }
 
 .bld {
-	font-weight: 700;
+    font-weight: 700;
 }
 
 .ital {
-	font-style: italic;
+    font-style: italic;
 }
 
 .dotted-line {
-	@include dotsHorizontal();
-	height:2px;
-	margin-top: 21px;
-	margin-bottom: 21px;
+    @include dotsHorizontal();
+    height: 2px;
+    margin-top: 21px;
+    margin-bottom: 21px;
 }
 
 .red {
-	color: $burgundy;
+    color: $burgundy;
 }
 
+.underline {
+    text-decoration: underline;
+}
 
 /* ********** Content ********** */
 .content {
-	@include marginTopBottom(40px, 25px);
+    @include marginTopBottom(40px, 25px);
 
-	.bottle-shot {
-		// padding-top: 20px;
-		text-align: center;
-
+    .bottle-shot {
         .title {
+            @include openSansHTag("16px");
             text-align: center;
             margin-top: 0;
         }
 
-        p {
-            text-align: left;
-            font-size: $font-size-small;
-        }
+        .bottle-and-text {
+            display: flex;
+            align-items: flex-start;
 
-        .bottle-img {
-            margin-top: 20px;
-        }
-	}
+            p {
+                text-align: left;
+                font-size: $font-size-small;
+            }
 
-	.cave-img {
-		float: left;
-		margin-top: 5px;
-		margin-right: 15px;
-		margin-bottom: 10px;
-	}
+            .bottle-img-a-tag {
+              flex-shrink: 0;
+            }
+
+            .bottle-img {
+                margin: 0 12px 10px 12px;
+            }
+        }
+    }
+
+    .cave-img {
+        float: left;
+        margin-top: 5px;
+        margin-right: 15px;
+        margin-bottom: 10px;
+
+        @media (min-width: $screen-sm-min) {
+            // margin-right: -15px;
+        }
+    }
+
+    .signatures-img {
+        margin-left: 16px;
+        margin-bottom: 44px;
+    }
 }
-
-
 
 /* ********** Footer ********** */
 .footer {
-	@include marginTopBottom(75px, 25px);
-	font-size: 12px;
+    @include marginTopBottom(75px, 25px);
+    font-size: 12px;
 
-	.contact-email {
+    .contact-email {
+        text-align: left;
 
-		text-align: left;
+        @media (min-width: $screen-sm-min) {
+            text-align: right;
+        }
 
-		@media (min-width: $screen-sm-min) {
-			text-align: right;
-		}
-
-		a {
-			text-decoration: underline;
-		}
-	}
+        a {
+            text-decoration: underline;
+        }
+    }
 }
-
-

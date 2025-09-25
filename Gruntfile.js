@@ -258,6 +258,24 @@ module.exports = function (grunt) {
             }
         },
 
+        // Fix image paths to be absolute
+        'string-replace': {
+            dist: {
+                files: [{
+                    expand: true,
+                    cwd: '<%= config.dist %>',
+                    src: '{,*/}*.html',
+                    dest: '<%= config.dist %>'
+                }],
+                options: {
+                    replacements: [{
+                        pattern: /src="images\//g,
+                        replacement: 'src="/images/'
+                    }]
+                }
+            }
+        },
+
         htmlmin: {
             dist: {
                 options: {
@@ -401,6 +419,7 @@ module.exports = function (grunt) {
         'copy:dist',
         'rev',
         'usemin',
+        'string-replace',
         'htmlmin'
     ]);
 
