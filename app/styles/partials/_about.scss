@@ -32,10 +32,7 @@
 	@include dotsVertical();
 
 	h3 {
-		margin-top: 45px;
-    font-family: ‘Open Sans’, sans-serif;
-		font-weight: 700;
-    font-size: 16px;
+    @include openSansHTag('16px');
 		margin-top: 35px;
 
 		@media (min-width: $screen-sm-min) {

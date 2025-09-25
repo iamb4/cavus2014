@@ -11,6 +11,12 @@
 	background-position: $spriteX $spriteY;
 }
 
+@mixin openSansHTag($size) {
+  font-family: ‘Open Sans’, sans-serif;
+  font-weight: 700;
+  font-size: $size;
+}
+
 @mixin marginTopBottom($top, $bottom) {
 	margin-top: $top;
 	margin-bottom: $bottom;
