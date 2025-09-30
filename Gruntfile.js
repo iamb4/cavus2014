@@ -419,7 +419,6 @@ module.exports = function (grunt) {
         'copy:dist',
         'rev',
         'usemin',
-        'string-replace',
         'htmlmin'
     ]);
 
